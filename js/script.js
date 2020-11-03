@@ -7,17 +7,11 @@ console.log("%c Github %c", "background:#333333; color:#ffffff", "", "https://gi
     showMenu: function () {
       $(".menu").fadeIn(300);
       $("body").addClass("lock-screen");
-      $("main").addClass("blur");
-      $(".preview").addClass("blur");
-      $(".footer").addClass("blur");
       fn.hideFab();
     },
     hideMenu: function () {
       $(".menu").fadeOut(300);
       $("body").removeClass("lock-screen");
-      $("main").removeClass("blur");
-      $(".preview").removeClass("blur");
-      $(".footer").removeClass("blur");
     },
     activeFab: function () {
       $(".fab-up").addClass("fab-up-active");
@@ -129,7 +123,7 @@ console.log("%c Github %c", "background:#333333; color:#ffffff", "", "https://gi
       $(".fab-up .fab-daovoice").on("click", function () {
         fn.freezeFab();
       });
-      if (CONFIG.fab.alwaysShow) {
+      if (CONFIG.fab.always_show) {
         fn.showFab();
       } else {
         $(window).scroll(fn.scroolFab);
