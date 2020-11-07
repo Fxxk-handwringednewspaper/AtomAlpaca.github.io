@@ -172,14 +172,14 @@
     <article class="article">
   <div class="wrap">
     <section class="head">
-  <img   class="lazyload" data-original="https://pic.izhaoo.com/20200421201200.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <img   class="lazyload" data-original="https://pic.izhaoo.com/20200718151924.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
   <div class="head-mask">
     <h1 class="head-title">Bugku的一些题解</h1>
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>十一月 07, 2020</span
         class="post-info-item">
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>302</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>494</span>
     </div>
   </div>
 </section>
@@ -195,6 +195,25 @@
 <figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs delphi">key<span class="hljs-comment">&#123;you are right&#125;</span><br></code></pre></td></tr></table></figure>
 
 <p>提交成功！</p>
+<h2 id="隐写"><a href="#隐写" class="headerlink" title="隐写"></a>隐写</h2><p>下载下来是一个rar压缩包</p>
+<p>解压后只有一张图片</p>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/B5AeKA"><img   class="lazyload" data-original="https://s1.ax1x.com/2020/11/07/B5AeKA.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="B5AeKA.png"></a></p>
+<p>于是用<code>binwalk</code>扫了一下</p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">binwalk -e <span class="hljs-number">2.</span>png<br></code></pre></td></tr></table></figure>
+
+<p>什么都没扫出来……</p>
+<p>那就试试修改长宽</p>
+<p>然后用16进制编辑器打开</p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">hexedit <span class="hljs-number">2.</span>png<br></code></pre></td></tr></table></figure>
+
+<p>把长宽改成相等长度</p>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/B5ZCEq"><img   class="lazyload" data-original="https://s1.ax1x.com/2020/11/07/B5ZCEq.md.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="B5ZCEq.md.png"></a></p>
+<p>就是光标在的位置，原本是A4，改成和前面相同的F4</p>
+<p>再打开图片</p>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/B5Zpbn"><img   class="lazyload" data-original="https://s1.ax1x.com/2020/11/07/B5Zpbn.md.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="B5Zpbn.md.png"></a></p>
+<p>下方就出现flag了~</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">BUGKU</span>&#123;a<span class="hljs-number">1</span>e<span class="hljs-number">5</span>aSA&#125;<br></code></pre></td></tr></table></figure>
+
 
       </section>
       <section class="extra">
