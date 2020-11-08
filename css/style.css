@@ -1,5 +1,5 @@
 :root {
-  --color-background: #F5FFFA;
+  --color-background: #F8F8FF;
   --color-background-secondary: #f6f8fa;
   --color-background-rgb: 255, 255, 255;
   --color-text: #33333D;
@@ -54,7 +54,7 @@ body a {
   text-decoration: none;
 }
 body a:hover {
-  color: #F8F8FF;
+  color: #008080;
 }
 body a,
 body a:hover {
@@ -120,15 +120,15 @@ body ul {
   transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
 }
 *::selection {
-  background: #F8F8FF;
+  background: #008080;
   color: #fff;
 }
 *::-moz-selection {
-  background: #F8F8FF;
+  background: #008080;
   color: #fff;
 }
 *::-webkit-selection {
-  background: #F8F8FF;
+  background: #008080;
   color: #fff;
 }
 .container {
@@ -714,7 +714,7 @@ body ul {
   font-size: 1.5em;
 }
 .fab:hover {
-  background-color: #F8F8FF;
+  background-color: #008080;
   cursor: pointer;
 }
 .fab-hide {
@@ -1281,7 +1281,7 @@ body ul {
   background-color: var(--color-background-secondary);
   padding: 2px 5px;
   border-radius: 2px;
-  color: #F8F8FF;
+  color: #008080;
 }
 .article .wrap .main .content a {
   text-decoration: underline;
@@ -1337,7 +1337,7 @@ body ul {
   margin: 0 0 1em;
   padding: 15px 20px;
   background-color: var(--color-background-secondary);
-  border-left: 4px solid #F8F8FF;
+  border-left: 4px solid #008080;
 }
 .article .wrap .main .content blockquote p {
   margin: 0;
@@ -1346,7 +1346,7 @@ body ul {
   margin-top: 50px;
 }
 .article .wrap .main .extra .copyright {
-  border-left: 4px solid #F8F8FF;
+  border-left: 4px solid #008080;
   background-color: var(--color-background-secondary);
   list-style: none;
   padding: 15px 20px;
@@ -1431,7 +1431,7 @@ body ul {
 }
 .article .wrap .main .extra .tag-list .tag-list-item:hover {
   cursor: pointer;
-  background-color: #F8F8FF;
+  background-color: #008080;
 }
 .article .wrap .main .extra .tag-list .tag-list-item:hover a {
   color: #fff;
@@ -1454,7 +1454,7 @@ body ul {
   text-align: center;
 }
 .article .wrap .main .comments .btn:hover {
-  background-color: #F8F8FF;
+  background-color: #008080;
   color: #fff;
   transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
   cursor: pointer;
@@ -1583,7 +1583,7 @@ body ul {
   margin-right: 10px;
 }
 .tags a:hover {
-  background-color: #F8F8FF;
+  background-color: #008080;
   color: #fff !important;
 }
 .galleries {
